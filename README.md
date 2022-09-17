@@ -7,11 +7,11 @@
 
 3. 打开Fiddler
 
-   ![image-20220918020822678](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918020822678.png)
+   ![image-20220918020822678](img/image-20220918020822678.png)
 
 然后打开微信，打开羊了个羊小程序，进入主界面。然后返回Fiddler界面，看看有没有箭头所标注的数据
 
-![image-20220918021024878](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918021024878.png)
+![image-20220918021024878](img/image-20220918021024878.png)
 
 若没有，则说明没有抓到羊了个羊的包，然后去https://blog.csdn.net/weixin_46552558/article/details/124037807按照步骤操作，微信重启后打开羊了个羊，回到Fiddler发现就能抓到上图中的包了。
 
@@ -19,7 +19,7 @@
 
 4.接着手机电脑连接同一网络，使手机和电脑在同一个局域网环境下。电脑win+R 输入cmd ，在黑框里输入ipconfig查看电脑ip地址
 
-![image-20220918021838491](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918021838491.png)
+![image-20220918021838491](img/image-20220918021838491.png)
 
 
 
@@ -29,15 +29,15 @@
 
 5.打开Fiddler，点击这个
 
-![image-20220918022250937](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918022250937.png)
+![image-20220918022250937](img/image-20220918022250937.png)
 
 
 
-找到这一行![image-20220918022319712](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918022319712.png)
+找到这一行![image-20220918022319712](img/image-20220918022319712-1663439734915.png)
 
 在最后的if下面添加这一句代码
 
-![image-20220918022353125](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20220918022353125.png)
+![image-20220918022353125](img/image-20220918022353125.png)
 
 ~~~java
  if (oSession.PathAndQuery=="/sheep/v1/game/map_info_new?map_id=90018") {
